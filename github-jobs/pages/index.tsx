@@ -1,6 +1,6 @@
 import React from 'react'
-import Nav from '../components/nav'
-import Board from './board'
+import Nav from 'components/nav'
+import Board from 'pages/board'
 
 const Home = () => (
   <div>
