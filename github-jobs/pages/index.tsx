@@ -4,7 +4,6 @@ import Board from 'pages/board'
 
 const Home = () => (
   <div>
-
     <Nav />
 
     <Board />

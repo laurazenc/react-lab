@@ -1,24 +1,24 @@
-import React from "react"
-import App from "next/app"
-import Head from "next/head"
-import { ThemeProvider, createGlobalStyle } from "styled-components"
+import React from 'react'
+import App from 'next/app'
+import Head from 'next/head'
+import { ThemeProvider, createGlobalStyle } from 'styled-components'
 
 export interface ITheme {
-  niceBlack: string;
+  niceBlack: string
 }
 
 export interface IThemeWrapper {
-  theme: ITheme;
+  theme: ITheme
 }
 
 export const theme: ITheme = {
-  niceBlack: "#001F3F",
+  niceBlack: '#001F3F'
 }
 
 const GlobalStyle = createGlobalStyle<IThemeWrapper>`
   body {
     margin: 0 auto;
-    color: ${props => props.theme.niceBlack};
+    color: ${(props) => props.theme.niceBlack};
   }
 `
 
